@@ -1,0 +1,46 @@
+---
+import Cases from "../components/sections/Cases.astro";
+import Contact from "../components/sections/Contact.astro";
+import Hero from "../components/sections/Hero.astro";
+import Process from "../components/sections/FAQ.astro";
+import Proposal from "../components/sections/Proposal.astro";
+import Services from "../components/sections/Services.astro";
+import Sponsors from "../components/sections/Sponsors.astro";
+import Testimonials from "../components/sections/Testimonials.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout
+  title="ELECTRICAL"
+  description="Professional electrical services offering reliable solutions for residential and commercial needs. From installations to repairs, our certified electricians ensure safe, efficient, and code-compliant work. Emergency services available 24/7."
+>
+  <Hero />
+
+  <div class="[content-visibility:auto] [contain-intrinsic-size:400px]">
+    <Sponsors />
+  </div>
+
+  <div class="[content-visibility:auto] [contain-intrinsic-size:600px]">
+    <Services />
+  </div>
+
+  <div class="[content-visibility:auto] [contain-intrinsic-size:500px]">
+    <Proposal />
+  </div>
+
+  <div class="[content-visibility:auto] [contain-intrinsic-size:700px]">
+    <Cases />
+  </div>
+
+  <div class="[content-visibility:auto] [contain-intrinsic-size:600px]">
+    <Process />
+  </div>
+
+  <div class="[content-visibility:auto] [contain-intrinsic-size:600px]">
+    <Testimonials />
+  </div>
+
+  <div class="[content-visibility:auto] [contain-intrinsic-size:500px]">
+    <Contact />
+  </div>
+</MainLayout>
